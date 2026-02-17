@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>About Us - OmniSeq</title>
+    <meta name="description" content="Learn about OmniSeq - Enterprise cybersecurity solutions with global standards and local expertise in Nepal.">
+    <link rel="icon" type="image/svg+xml" href="logo-optimized.svg">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="canonical" href="https://omniseq.com.np/about.html" />
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <div id="app">
+        <header class="header">
+            <div class="container">
+                <div class="header__content">
+                    <a href="index.html" class="header__logo">
+                        <img src="logo-optimized.svg" alt="OmniSeq Logo" class="logo-icon" width="40" height="40">
+                        <span class="logo-text">OmniSeq</span>
+                    </a>
+                    <nav class="nav">
+                        <a href="index.html" class="nav__link">Home</a>
+                        <a href="services.html" class="nav__link">Services</a>
+                        <a href="about.html" class="nav__link">About</a>
+                        <a href="index.html#contact" class="nav__link">Contact</a>
+                    </nav>
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">
+                        <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                        <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: none;">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <main id="main-content">
+            <section class="about" style="padding-top: 120px;">
+                <div class="container">
+                    <div class="section-header">
+                        <h1 class="section-title">About Us</h1>
+                        <p class="section-subtitle"><em>Your Dedicated Team for Security and Success</em></p>
+                    </div>
+
+                    <div class="mission-section">
+                        <div class="mission-content">
+                            <p class="mission-text">Founded with a mission to strengthen Nepal's cybersecurity landscape, OmniSeq combines global-standard security practices with deep local expertise. Our in-house development team and certified cybersecurity professionals work relentlessly to detect threats, prevent attacks, and build enterprise-grade digital resilience for organizations across banking, financial services, healthcare, and government sectors.</p>
+                            <p class="mission-text">We don't just protect infrastructure—we engineer security solutions that evolve with your business.</p>
+                        </div>
+                    </div>
+
+                    <div class="ceo-section">
+                        <div class="ceo-image-wrapper">
+                            <div class="ceo-image">
+                                <svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="1">
+                                    <rect x="10" y="10" width="100" height="100" rx="4"/>
+                                    <circle cx="60" cy="40" r="15"/>
+                                    <path d="M30 85c0-16.57 13.43-30 30-30s30 13.43 30 30v20H30V85z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="ceo-message">
+                            <blockquote class="ceo-quote">
+                                "At OmniSeq, we're not just protecting infrastructure—we're building the security backbone that allows the enterprises to innovate fearlessly. Every API secured, every threat detected before impact, every regulation met without friction represents our commitment to one belief: enterprise-grade cybersecurity is a competitive advantage, not a cost center."
+                            </blockquote>
+                            <p class="ceo-quote">Security is a journey, not a destination. We're here for every step.</p>
+                            <p class="ceo-signature">— Manjeevan Adhikari<br>Co-Founder & CEO, OmniSeq Pvt. Ltd.</p>
+                        </div>
+                    </div>
+
+                    <section class="industries" style="margin-top: 60px;">
+                        <div class="section-header">
+                            <h2 class="section-title">Industries We Serve</h2>
+                        </div>
+                        <div class="industries__grid" id="industriesContainer"></div>
+                    </section>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer" id="footerContainer"></footer>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.min.js" defer></script>
+    <script src="templates.js" defer></script>
+    <script src="theme.js" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof renderIndustries === 'function') {
+                renderIndustries();
+            }
+            if (typeof renderFooter === 'function') {
+                renderFooter();
+            }
+        });
+    </script>
+</body>
+</html>
+
