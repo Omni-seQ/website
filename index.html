@@ -1,326 +1,696 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-color-scheme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
-    <!-- Primary Meta Tags -->
-    <title>OmniSeq - Enterprise Cybersecurity Solutions | Nepal</title>
-    <meta name="title" content="OmniSeq - Enterprise Cybersecurity Solutions | Nepal">
-    <meta name="description" content="Enterprise-grade IT solutions designed for modern business challenges. VAPT testing, compliance auditing, security operations, and infrastructure design in Nepal.">
-    <meta name="keywords" content="cybersecurity, VAPT testing, compliance auditing, security operations, infrastructure design, cloud enablement, managed IT services, Nepal">
-    <meta name="author" content="OmniSeq Pvt. Ltd.">
-    <meta name="robots" content="index, follow">
-    <meta name="language" content="English">
-    
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://omniseq.com.np/">
-    <meta property="og:title" content="OmniSeq - Enterprise Cybersecurity Solutions">
-    <meta property="og:description" content="Enterprise-grade IT solutions designed for modern business challenges. VAPT testing, compliance auditing, security operations, and infrastructure design.">
-    
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://omniseq.com.np/">
-    <meta property="twitter:title" content="OmniSeq - Enterprise Cybersecurity Solutions">
-    <meta property="twitter:description" content="Enterprise-grade IT solutions designed for modern business challenges.">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="logo-optimized.svg">
-    <link rel="apple-touch-icon" href="logo-optimized.svg">
-    
-    <!-- Preconnect for performance -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://unpkg.com">
-    <link rel="preconnect" href="https://cdn.jsdelivr.net">
-    
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="styles.css">
-    <!-- Optimized font loading with font-display: swap for better readability -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-    
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://omniseq.com.np/" />
-    
-    <!-- Theme Color -->
-    <meta name="theme-color" content="#21808d">
-    
-    <!-- Robots -->
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    
-    <!-- Additional SEO -->
-    <meta name="googlebot" content="index, follow">
-    <meta name="bingbot" content="index, follow">
-    
-    <!-- Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "OmniSeq Pvt. Ltd.",
-      "url": "https://omniseq.com.np",
-      "logo": "https://omniseq.com.np/logo-optimized.svg",
-      "description": "Enterprise-grade cybersecurity and IT infrastructure solutions",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Kathmandu,
-        "addressCountry": "NP"
-      },
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "Customer Service",
-        "email": "info@omniseq.com.np"
-      },
-      "sameAs": [
-        "https://linkedin.com/company/omniseq",
-        "https://twitter.com/omniseq",
-        "https://github.com/omniseq"
-      ]
-    }
-    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>OmniSeq - Enterprise Cybersecurity Solutions | Nepal</title>
+  <meta name="title" content="OmniSeq - Enterprise Cybersecurity Solutions | Nepal">
+  <meta name="description" content="Enterprise-grade IT solutions designed for modern business challenges. VAPT testing, compliance auditing, security operations, and infrastructure design in Nepal.">
+  <meta name="keywords" content="cybersecurity, VAPT testing, compliance auditing, security operations, infrastructure design, cloud enablement, managed IT services, Nepal">
+  <meta name="author" content="OmniSeq Pvt. Ltd.">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="language" content="English">
+  <meta name="googlebot" content="index, follow">
+  <meta name="theme-color" content="#0891b2">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://omniseq.com.np/">
+  <meta property="og:title" content="OmniSeq - Enterprise Cybersecurity Solutions">
+  <meta property="og:description" content="Enterprise-grade IT solutions designed for modern business challenges. VAPT testing, compliance auditing, security operations, and infrastructure design.">
+
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://omniseq.com.np/">
+  <meta property="twitter:title" content="OmniSeq - Enterprise Cybersecurity Solutions">
+  <meta property="twitter:description" content="Enterprise-grade IT solutions designed for modern business challenges.">
+
+  <link rel="icon" type="image/svg+xml" href="logo-optimized.svg">
+  <link rel="apple-touch-icon" href="logo-optimized.svg">
+  <link rel="canonical" href="https://omniseq.com.np/">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "OmniSeq Pvt. Ltd.",
+    "url": "https://omniseq.com.np",
+    "logo": "https://omniseq.com.np/logo-optimized.svg",
+    "description": "Enterprise-grade cybersecurity and IT infrastructure solutions",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Kathmandu",
+      "addressCountry": "NP"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "Customer Service",
+      "email": "contact@omniseq.com.np"
+    },
+    "sameAs": [
+      "https://linkedin.com/company/omniseq",
+      "https://twitter.com/omniseq",
+      "https://github.com/Omni-seQ"
+    ]
+  }
+  </script>
 </head>
 <body>
-    <!-- Skip to main content link for accessibility -->
-    <a href="#home" class="skip-link">Skip to main content</a>
-    
-    <div id="app">
-        <!-- ========== HEADER / NAVIGATION ========== -->
-        <header class="header" :class="{ 'scrolled': isScrolled }">
-            <div class="container">
-                <div class="header__content">
-                    <!-- Logo Section -->
-                    <a href="#home" class="header__logo" @click="scrollToSection" aria-label="OmniSeq Home">
-                        <img src="logo-optimized.svg" alt="OmniSeq Logo" class="logo-icon" width="40" height="40">
-                        <span class="logo-text">OmniSeq</span>
-                    </a>
+  <a href="#home" class="skip-link">Skip to main content</a>
 
-                    <!-- Navigation Menu -->
-                    <nav class="nav" :class="{ 'open': mobileMenuOpen }">
-                        <a href="#home" class="nav__link" @click="scrollToSection">Home</a>
-                        <a href="#services" class="nav__link" @click="scrollToSection">Services</a>
-                        <a href="#about" class="nav__link" @click="scrollToSection">About</a>
-                        <a href="#contact" class="nav__link" @click="scrollToSection">Contact</a>
-                    </nav>
+  <!-- ========== HEADER ========== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#home" class="header__logo" aria-label="OmniSeq Home">
+        <img src="logo.png" alt="OmniSeq" class="logo-img" width="40" height="40">
+        <span class="logo-text">OmniSeq</span>
+      </a>
 
-                    <!-- Theme Toggle -->
-                    <button class="theme-toggle" @click="toggleTheme" :aria-label="theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'" :title="theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'">
-                        <svg v-if="theme === 'light'" class="theme-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                        </svg>
-                        <svg v-else class="theme-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="5"></circle>
-                            <line x1="12" y1="1" x2="12" y2="3"></line>
-                            <line x1="12" y1="21" x2="12" y2="23"></line>
-                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                            <line x1="1" y1="12" x2="3" y2="12"></line>
-                            <line x1="21" y1="12" x2="23" y2="12"></line>
-                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                        </svg>
-                    </button>
+      <nav class="nav" id="mainNav" role="navigation" aria-label="Main navigation">
+        <a href="#home" class="nav__link active" data-section="home">Home</a>
+        <a href="#services" class="nav__link" data-section="services">Services</a>
+        <a href="#about" class="nav__link" data-section="about">About</a>
+        <a href="#contact" class="nav__link" data-section="contact">Contact</a>
+      </nav>
 
-                    <!-- Mobile Menu Toggle -->
-                    <button class="mobile-menu-btn" :class="{ 'open': mobileMenuOpen }" @click="toggleMobileMenu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                </div>
-            </div>
-        </header>
-
-        <!-- ========== HERO SECTION ========== -->
-        <section id="home" class="hero">
-            <div class="hero__background" id="heroBackground">
-                <div class="cyber-grid"></div>
-                <div class="cyber-line cyber-line--1"></div>
-                <div class="cyber-line cyber-line--2"></div>
-                <div class="glow-orb glow-orb--1"></div>
-                <div class="glow-orb glow-orb--2"></div>
-                <div class="mouse-follower" id="mouseFollower"></div>
-                <canvas id="particleCanvas" class="particle-canvas"></canvas>
-            </div>
-
-            <div class="container">
-                <div class="hero__content">
-                    <h1 class="hero__title">
-                        <em>Beyond Protection.</em><br>
-                        Engineered for Growth.
-                    </h1>
-                    <p class="hero__subtitle"><em>Enterprise-grade IT solutions designed for modern business challenges</em></p>
-                    
-                    <div class="hero__cta">
-                        <a href="#services" class="btn btn--primary" @click="scrollToSection"> 
-                            <span>Explore Services</span>
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M5 12h14M12 5l7 7-7 7"/>
-                            </svg>
-                        </a>
-                        <a href="#contact" class="btn btn--outline" @click="scrollToSection">Get in Touch</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ========== SERVICES SECTION ========== -->
-        <section id="services" class="services">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Our <b>Services</b></h2>
-                    <p class="section-subtitle">Comprehensive cybersecurity and IT infrastructure solutions tailored to enterprise needs</p>
-                </div>
-
-                <div class="services__grid" id="servicesContainer">
-                    <!-- Handlebars rendered services -->
-                </div>
-            </div>
-        </section>
-
-        <!-- ========== ABOUT SECTION ========== -->
-        <section id="about" class="about">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">About Us</h2>
-                    <p class="section-subtitle"><em>Your Dedicated Team for Security and Success</em></p>
-                </div>
-
-                <!-- Mission Narrative Section -->
-                <div class="mission-section" :class="{ 'active': missionHovered }" @mouseenter="missionHovered = true" @mouseleave="missionHovered = false">
-                    <div class="mission-content">
-                        <p class="mission-text">Founded with a mission to strengthen Nepal's cybersecurity landscape, Omni Seq combines global-standard security practices with deep local expertise. Our in-house development team and certified cybersecurity professionals work relentlessly to detect threats, prevent attacks, and build enterprise-grade digital resilience for organizations across banking, financial services, healthcare, and government sectors.</p>
-                        <p class="mission-text">We don't just protect infrastructure—we engineer security solutions that evolve with your business.</p>
-                    </div>
-                </div>
-
-                <!-- CEO Message Section -->
-                <div class="ceo-section">
-                    <div class="ceo-image-wrapper">
-                        <div class="ceo-image">
-                            <svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="1">
-                                <rect x="10" y="10" width="100" height="100" rx="4"/>
-                                <circle cx="60" cy="40" r="15"/>
-                                <path d="M30 85c0-16.57 13.43-30 30-30s30 13.43 30 30v20H30V85z"/>
-                            </svg>
-                        </div>
-                    </div>
-
-                    <div class="ceo-message">
-                        <blockquote class="ceo-quote">
-                            "At Omni Seq, we're not just protecting infrastructure—we're building the security backbone that allows the enterprises to innovate fearlessly. Every API secured, every threat detected before impact, every regulation met without friction represents our commitment to one belief: enterprise-grade cybersecurity is a competitive advantage, not a cost center."
-                        </blockquote>
-                        <p class="ceo-quote">Security is a journey, not a destination. We're here for every step.</p>
-                        <p class="ceo-signature">Co-Founder & CTO, Omni Seq Pvt. Ltd.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ========== INDUSTRIES SECTION ========== -->
-        <section class="industries">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Industries We Serve</h2>
-                </div>
-
-                <div class="industries__grid" id="industriesContainer">
-                    <!-- Handlebars rendered industries -->
-                </div>
-            </div>
-        </section>
-
-        <!-- ========== CONTACT SECTION ========== -->
-        <section id="contact" class="contact">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Get in Touch</h2>
-                    <p class="section-subtitle"><em>Let's discuss how we can secure your organization</em></p>
-                </div>
-
-                <div class="contact__content">
-                    <!-- Contact Info Boxes -->
-                    <div class="contact__info">
-                        <div class="contact-box">
-                            <div class="contact-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                                    <circle cx="12" cy="10" r="3"/>
-                                </svg>
-                            </div>
-                            <h4>Location</h4>
-                            <p>Kathmandu, Nepal</p>
-                        </div>
-
-                        <div class="contact-box">
-                            <div class="contact-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <rect x="2" y="4" width="20" height="16" rx="2"/>
-                                    <path d="M22 6l-8.97 5.7a1.94 1.94 0 01-2.06 0L2 6"/>
-                                </svg>
-                            </div>
-                            <h4>Contact</h4>
-                            <p><a href="mailto:info@omniseq.com.np">contact@omniseq.com.np</a></p>
-                        </div>
-
-                        <div class="contact-box">
-                            <div class="contact-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <circle cx="12" cy="12" r="1"/>
-                                    <path d="M12 1v6m0 6v6"/>
-                                    <path d="M4.22 4.22l4.24 4.24m5.08 5.08l4.24 4.24"/>
-                                    <path d="M1 12h6m6 0h6"/>
-                                    <path d="M4.22 19.78l4.24-4.24m5.08-5.08l4.24-4.24"/>
-                                </svg>
-                            </div>
-                            <h4>Hours</h4>
-                            <p>Mon – Fri: 9 AM – 6 PM<br>24/7 Emergency Support</p>
-                        </div>
-                    </div>
-
-                    <!-- Contact Form -->
-                    <form class="contact-form" @submit.prevent="handleFormSubmit">
-                        <div class="form-group">
-                            <input type="text" v-model="form.name" placeholder="Your Name" required class="form-input">
-                            <div class="form-underline"></div>
-                        </div>
-
-                        <div class="form-group">
-                            <input type="email" v-model="form.email" placeholder="Your Email" required class="form-input">
-                            <div class="form-underline"></div>
-                        </div>
-
-                        <div class="form-group">
-                            <input type="text" v-model="form.subject" placeholder="Subject" required class="form-input">
-                            <div class="form-underline"></div>
-                        </div>
-
-                        <div class="form-group">
-                            <textarea v-model="form.message" placeholder="Your Message" rows="5" required class="form-textarea"></textarea>
-                            <div class="form-underline"></div>
-                        </div>
-
-                        <button type="submit" class="btn btn--primary btn--full">Send Message</button>
-                        <p v-if="formSubmitted" class="form-message" :class="{ 'success': !formError }">{{ formMessage }}</p>
-                    </form>
-                </div>
-            </div>
-        </section>
-
-        <!-- ========== FOOTER ========== -->
-        <footer class="footer" id="footerContainer">
-            <!-- Handlebars rendered footer -->
-        </footer>
+      <div class="header__actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Switch to dark mode" title="Toggle theme">
+          <svg class="theme-icon theme-icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+          <svg class="theme-icon theme-icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+        </button>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
+  </header>
 
-    <!-- Vue.js CDN -->
-    <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js" defer></script>
-    <!-- Handlebars.js CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.min.js" defer></script>
-    <!-- Templates -->
-    <script src="templates.js" defer></script>
-    <!-- Main Application -->
-    <script src="main.js" defer></script>
+  <main>
+    <!-- ========== HERO ========== -->
+    <section id="home" class="hero">
+      <div class="hero__bg" id="heroBg">
+        <div class="hero__grid"></div>
+        <div class="hero__orb hero__orb--1"></div>
+        <div class="hero__orb hero__orb--2"></div>
+        <div class="hero__glow" id="heroGlow"></div>
+        <canvas id="heroCanvas" class="hero__canvas"></canvas>
+      </div>
+      <div class="container hero__content">
+        <span class="hero__badge">
+          <svg class="hero__badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+          Enterprise Cybersecurity
+        </span>
+        <h1 class="hero__title"><em>Beyond Protection.</em><br>Engineered for Growth.</h1>
+        <p class="hero__subtitle">Enterprise-grade IT solutions designed for modern business challenges</p>
+        <div class="hero__actions">
+          <a href="#services" class="btn btn--primary">
+            <span>Explore Services</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#contact" class="btn btn--outline">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SERVICES ========== -->
+    <section id="services" class="section services">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">What We Do</span>
+          <h2 class="section__title">Our <strong>Services</strong></h2>
+          <p class="section__subtitle">Comprehensive cybersecurity and IT infrastructure solutions tailored to enterprise needs</p>
+        </div>
+        <div class="services__grid">
+
+          <div class="service-card reveal" data-service="vapt-testing">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+            </div>
+            <h3 class="service-card__title">VAPT Testing</h3>
+            <p class="service-card__desc">Comprehensive accessibility testing ensuring digital solutions meet WCAG and accessibility standards.</p>
+            <div class="service-card__details">
+              <ul>
+                <li>Network Testing</li>
+                <li>Web Application Testing</li>
+                <li>Mobile Application Testing</li>
+                <li>Cloud Infrastructure Testing</li>
+                <li>Detailed Accessibility Reports</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="service-card reveal" data-service="compliance-auditing">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3"/></svg>
+            </div>
+            <h3 class="service-card__title">Compliance and Auditing</h3>
+            <p class="service-card__desc">Expert audit services aligned with ISO 27001, SOC 2, PCI-DSS, and HIPAA standards.</p>
+            <div class="service-card__details">
+              <ul>
+                <li>ISO 27001 Compliance</li>
+                <li>SOC 2 Type II Audits</li>
+                <li>PCI-DSS Validation</li>
+                <li>HIPAA Assessment</li>
+                <li>Compliance Documentation</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="service-card reveal" data-service="security-operations">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <h3 class="service-card__title">Security Operations</h3>
+            <p class="service-card__desc">Proactive 24/7 threat monitoring, incident response, and managed security services.</p>
+            <div class="service-card__details">
+              <ul>
+                <li>24/7 Threat Monitoring</li>
+                <li>Incident Response Team</li>
+                <li>Security Alert Management</li>
+                <li>Vulnerability Assessment</li>
+                <li>Threat Intelligence</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="service-card reveal" data-service="infrastructure-design">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4"/></svg>
+            </div>
+            <h3 class="service-card__title">Infrastructure Design</h3>
+            <p class="service-card__desc">Architecting secure, scalable networks with zero-trust security principles and modern cloud patterns.</p>
+            <div class="service-card__details">
+              <ul>
+                <li>Zero-Trust Architecture</li>
+                <li>Network Design</li>
+                <li>Cloud Infrastructure</li>
+                <li>Load Balancing</li>
+                <li>Disaster Recovery Planning</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="service-card reveal" data-service="cloud-enablement">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"/></svg>
+            </div>
+            <h3 class="service-card__title">Cloud Enablement</h3>
+            <p class="service-card__desc">Seamless migration, security hardening, and optimization across AWS, GCP, Azure, and hybrid environments.</p>
+            <div class="service-card__details">
+              <ul>
+                <li>AWS Security</li>
+                <li>GCP Implementation</li>
+                <li>Azure Configuration</li>
+                <li>Hybrid Cloud Strategy</li>
+                <li>Multi-Cloud Management</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="service-card reveal" data-service="managed-services">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065zM12 15a3 3 0 100-6 3 3 0 000 6z"/></svg>
+            </div>
+            <h3 class="service-card__title">Managed IT Services</h3>
+            <p class="service-card__desc">Comprehensive IT management including endpoint protection, patch management, and proactive maintenance.</p>
+            <div class="service-card__details">
+              <ul>
+                <li>Patch Management</li>
+                <li>Endpoint Protection</li>
+                <li>System Monitoring</li>
+                <li>Backup &amp; Recovery</li>
+                <li>Technical Support</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== WHY CHOOSE US ========== -->
+    <section class="section why-us">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">Why OmniSeq</span>
+          <h2 class="section__title">Built on <strong>Trust</strong></h2>
+          <p class="section__subtitle">A security-first approach backed by certified expertise and proven results</p>
+        </div>
+        <div class="why-us__grid">
+          <div class="trust-card reveal">
+            <div class="trust-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+            </div>
+            <h3 class="trust-card__title">Certified Experts</h3>
+            <p class="trust-card__desc">Industry-leading certifications including OSCP, CISSP, and CEH backing every engagement.</p>
+          </div>
+          <div class="trust-card reveal">
+            <div class="trust-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <h3 class="trust-card__title">24/7 Monitoring</h3>
+            <p class="trust-card__desc">Round-the-clock security operations center ensuring continuous protection and rapid response.</p>
+          </div>
+          <div class="trust-card reveal">
+            <div class="trust-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2"/><path d="M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/><path d="M9 14l2 2 4-4"/></svg>
+            </div>
+            <h3 class="trust-card__title">Compliance Ready</h3>
+            <p class="trust-card__desc">Pre-built frameworks for ISO 27001, SOC 2, PCI-DSS, and HIPAA compliance.</p>
+          </div>
+          <div class="trust-card reveal">
+            <div class="trust-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <h3 class="trust-card__title">Local Expertise</h3>
+            <p class="trust-card__desc">Deep understanding of Nepal's regulatory landscape and business environment.</p>
+          </div>
+          <div class="trust-card reveal">
+            <div class="trust-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            </div>
+            <h3 class="trust-card__title">Rapid Response</h3>
+            <p class="trust-card__desc">Swift incident response with defined SLAs and structured escalation procedures.</p>
+          </div>
+          <div class="trust-card reveal">
+            <div class="trust-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3 class="trust-card__title">Proven Results</h3>
+            <p class="trust-card__desc">Trusted by organizations across banking, healthcare, and government sectors.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section id="about" class="section about">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">Who We Are</span>
+          <h2 class="section__title">About <strong>Us</strong></h2>
+          <p class="section__subtitle">Your Dedicated Team for Security and Success</p>
+        </div>
+        <div class="about__content reveal">
+          <div class="about__mission">
+            <p>Founded with a mission to strengthen Nepal's cybersecurity landscape, Omni Seq combines global-standard security practices with deep local expertise. Our in-house development team and certified cybersecurity professionals work relentlessly to detect threats, prevent attacks, and build enterprise-grade digital resilience for organizations across banking, financial services, healthcare, and government sectors.</p>
+            <p>We don't just protect infrastructure&mdash;we engineer security solutions that evolve with your business.</p>
+          </div>
+          <div class="about__stats">
+            <div class="about__stat">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              <span>Security First</span>
+            </div>
+            <div class="about__stat">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+              <span>Expert Team</span>
+            </div>
+            <div class="about__stat">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+              <span>Global Standards</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== LEADERSHIP ========== -->
+    <section class="section leadership">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">Leadership</span>
+          <h2 class="section__title">Message from the <strong>Co-Founder &amp; CTO</strong></h2>
+        </div>
+        <div class="leadership__card reveal">
+          <div class="leadership__top">
+            <div class="leadership__avatar">
+              <div class="leadership__avatar-inner">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="12" cy="8" r="4"/><path d="M6 21v-2a6 6 0 0112 0v2"/></svg>
+              </div>
+            </div>
+            <div class="leadership__info">
+              <h3 class="leadership__name">Co-Founder &amp; CTO</h3>
+              <p class="leadership__designation">Omni Seq Pvt. Ltd.</p>
+            </div>
+          </div>
+          <blockquote class="leadership__quote">
+            &ldquo;At Omni Seq, we're not just protecting infrastructure&mdash;we're building the security backbone that allows the enterprises to innovate fearlessly. Every API secured, every threat detected before impact, every regulation met without friction represents our commitment to one belief: enterprise-grade cybersecurity is a competitive advantage, not a cost center.&rdquo;
+          </blockquote>
+          <p class="leadership__closing">Security is a journey, not a destination. We're here for every step.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROCESS ========== -->
+    <section class="section process">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">How We Work</span>
+          <h2 class="section__title">Our <strong>Process</strong></h2>
+          <p class="section__subtitle">A structured engagement model designed for measurable security outcomes</p>
+        </div>
+        <div class="process__timeline">
+          <div class="process__step reveal">
+            <div class="process__number">01</div>
+            <h3 class="process__title">Discovery</h3>
+            <p class="process__desc">We begin by understanding your infrastructure, threat landscape, and compliance requirements through in-depth consultation.</p>
+          </div>
+          <div class="process__step reveal">
+            <div class="process__number">02</div>
+            <h3 class="process__title">Assessment</h3>
+            <p class="process__desc">Comprehensive security evaluation including vulnerability scanning, penetration testing, and gap analysis.</p>
+          </div>
+          <div class="process__step reveal">
+            <div class="process__number">03</div>
+            <h3 class="process__title">Strategy</h3>
+            <p class="process__desc">Development of a tailored security roadmap with prioritized recommendations and implementation plan.</p>
+          </div>
+          <div class="process__step reveal">
+            <div class="process__number">04</div>
+            <h3 class="process__title">Implementation</h3>
+            <p class="process__desc">Deploying security solutions with minimal business disruption and continuous validation.</p>
+          </div>
+          <div class="process__step reveal">
+            <div class="process__number">05</div>
+            <h3 class="process__title">Continuous Support</h3>
+            <p class="process__desc">Ongoing monitoring, regular assessments, and optimization to keep your security posture strong.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== INDUSTRIES ========== -->
+    <section class="section industries">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">Sectors</span>
+          <h2 class="section__title">Industries We <strong>Serve</strong></h2>
+        </div>
+        <div class="industries__grid">
+          <div class="industry-card reveal">
+            <div class="industry-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+            </div>
+            <h4 class="industry-card__name">Banking &amp; Finance</h4>
+          </div>
+          <div class="industry-card reveal">
+            <div class="industry-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            </div>
+            <h4 class="industry-card__name">Healthcare</h4>
+          </div>
+          <div class="industry-card reveal">
+            <div class="industry-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
+            </div>
+            <h4 class="industry-card__name">Enterprises</h4>
+          </div>
+          <div class="industry-card reveal">
+            <div class="industry-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h4 class="industry-card__name">Government</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FAQ ========== -->
+    <section class="section faq">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">FAQ</span>
+          <h2 class="section__title">Frequently Asked <strong>Questions</strong></h2>
+        </div>
+        <div class="faq__list">
+          <div class="faq__item reveal">
+            <button class="faq__question" aria-expanded="false">
+              <span>What industries do you primarily serve?</span>
+              <svg class="faq__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="faq__answer" aria-hidden="true">
+              <p>We serve banking &amp; finance, healthcare, enterprises, and government sectors, providing tailored cybersecurity solutions for each industry's unique regulatory and security requirements.</p>
+            </div>
+          </div>
+          <div class="faq__item reveal">
+            <button class="faq__question" aria-expanded="false">
+              <span>How does the engagement process work?</span>
+              <svg class="faq__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="faq__answer" aria-hidden="true">
+              <p>Our structured process begins with discovery and assessment, followed by strategy development, implementation, and continuous monitoring. Each phase is designed for measurable outcomes.</p>
+            </div>
+          </div>
+          <div class="faq__item reveal">
+            <button class="faq__question" aria-expanded="false">
+              <span>Do you provide 24/7 security monitoring?</span>
+              <svg class="faq__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="faq__answer" aria-hidden="true">
+              <p>Yes, our Security Operations Center provides round-the-clock threat monitoring, incident response, and security alert management with defined SLAs.</p>
+            </div>
+          </div>
+          <div class="faq__item reveal">
+            <button class="faq__question" aria-expanded="false">
+              <span>What compliance frameworks do you support?</span>
+              <svg class="faq__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="faq__answer" aria-hidden="true">
+              <p>We support ISO 27001, SOC 2 Type II, PCI-DSS, HIPAA, and other major compliance frameworks with pre-built assessment templates and documentation.</p>
+            </div>
+          </div>
+          <div class="faq__item reveal">
+            <button class="faq__question" aria-expanded="false">
+              <span>Can you integrate with existing security infrastructure?</span>
+              <svg class="faq__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="faq__answer" aria-hidden="true">
+              <p>Absolutely. We assess your current setup and build upon it, integrating new solutions seamlessly with your existing tools and workflows.</p>
+            </div>
+          </div>
+          <div class="faq__item reveal">
+            <button class="faq__question" aria-expanded="false">
+              <span>What certifications does your team hold?</span>
+              <svg class="faq__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="faq__answer" aria-hidden="true">
+              <p>Our team holds industry-recognized certifications including OSCP, CISSP, CEH, and platform-specific credentials for AWS, Azure, and GCP security.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CTA BAND ========== -->
+    <section class="cta-band">
+      <div class="container cta-band__inner">
+        <h2 class="cta-band__title">Ready to Fortify Your Security?</h2>
+        <p class="cta-band__text">Let's discuss how OmniSeq can protect and empower your enterprise.</p>
+        <a href="#contact" class="btn btn--primary btn--lg">
+          <span>Get Started</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">Get in Touch</span>
+          <h2 class="section__title">Contact <strong>Us</strong></h2>
+          <p class="section__subtitle">Let's discuss how we can secure your organization</p>
+        </div>
+        <div class="contact__grid">
+          <div class="contact__info">
+            <div class="contact-box reveal">
+              <div class="contact-box__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <h4>Location</h4>
+              <p>Kathmandu, Nepal</p>
+            </div>
+            <div class="contact-box reveal">
+              <div class="contact-box__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-8.97 5.7a1.94 1.94 0 01-2.06 0L2 6"/></svg>
+              </div>
+              <h4>Email</h4>
+              <p><a href="mailto:contact@omniseq.com.np" id="emailLink">contact@omniseq.com.np</a></p>
+            </div>
+            <div class="contact-box reveal">
+              <div class="contact-box__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              </div>
+              <h4>Hours</h4>
+              <p>Mon &ndash; Fri: 9 AM &ndash; 6 PM<br>24/7 Emergency Support</p>
+            </div>
+          </div>
+
+          <!--
+            CONTACT FORM — Integration Architecture:
+            GitHub Pages is static and cannot securely store SMTP or API secrets.
+            Actual email sending happens in a Cloudflare Worker.
+            The Worker calls the Zoho Mail API using server-side OAuth credentials.
+            Turnstile token must be validated server-side by the Worker.
+            CORS on the Worker must only allow the production site origin.
+          -->
+          <form class="contact__form" id="contactForm" novalidate>
+            <div class="form__row">
+              <div class="form__group">
+                <label for="contactName" class="form__label">Full Name <span class="form__required">*</span></label>
+                <input type="text" id="contactName" name="name" class="form__input" required minlength="2" maxlength="100" placeholder="John Doe" autocomplete="name">
+                <span class="form__error" id="nameError"></span>
+              </div>
+              <div class="form__group">
+                <label for="contactCompany" class="form__label">Company</label>
+                <input type="text" id="contactCompany" name="company" class="form__input" maxlength="100" placeholder="Acme Corp" autocomplete="organization">
+                <span class="form__error" id="companyError"></span>
+              </div>
+            </div>
+            <div class="form__row">
+              <div class="form__group">
+                <label for="contactEmail" class="form__label">Email Address <span class="form__required">*</span></label>
+                <input type="email" id="contactEmail" name="email" class="form__input" required maxlength="254" placeholder="john@company.com" autocomplete="email">
+                <span class="form__error" id="emailError"></span>
+              </div>
+              <div class="form__group">
+                <label for="contactPhone" class="form__label">Phone Number</label>
+                <input type="tel" id="contactPhone" name="phone" class="form__input" maxlength="20" placeholder="+977-..." autocomplete="tel">
+                <span class="form__error" id="phoneError"></span>
+              </div>
+            </div>
+            <div class="form__row">
+              <div class="form__group">
+                <label for="contactSubject" class="form__label">Subject <span class="form__required">*</span></label>
+                <input type="text" id="contactSubject" name="subject" class="form__input" required minlength="3" maxlength="200" placeholder="Security Assessment Inquiry">
+                <span class="form__error" id="subjectError"></span>
+              </div>
+              <div class="form__group">
+                <label for="contactService" class="form__label">Service of Interest <span class="form__required">*</span></label>
+                <select id="contactService" name="service" class="form__input form__select" required>
+                  <option value="">Select a Service</option>
+                  <option value="vapt-testing">VAPT Testing</option>
+                  <option value="compliance-auditing">Compliance &amp; Auditing</option>
+                  <option value="security-operations">Security Operations</option>
+                  <option value="infrastructure-design">Infrastructure Design</option>
+                  <option value="cloud-enablement">Cloud Enablement</option>
+                  <option value="managed-it-services">Managed IT Services</option>
+                </select>
+                <span class="form__error" id="serviceError"></span>
+              </div>
+            </div>
+            <div class="form__group">
+              <label for="contactMessage" class="form__label">Message <span class="form__required">*</span></label>
+              <textarea id="contactMessage" name="message" class="form__input form__textarea" required minlength="10" maxlength="2000" rows="5" placeholder="Tell us about your security needs..."></textarea>
+              <span class="form__error" id="messageError"></span>
+            </div>
+
+            <!-- Honeypot field — hidden from real users, bots fill it -->
+            <div class="form__hp" aria-hidden="true" tabindex="-1">
+              <label for="contactWebsite">Website</label>
+              <input type="text" id="contactWebsite" name="website" tabindex="-1" autocomplete="off">
+            </div>
+
+            <!-- Cloudflare Turnstile widget -->
+            <div class="form__turnstile">
+              <div id="turnstileWidget"></div>
+              <span class="form__error" id="turnstileError"></span>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--full" id="contactSubmit">
+              <span class="btn__text">Send Message</span>
+              <span class="btn__loading">
+                <svg class="spinner" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="3" stroke-dasharray="31.42" stroke-linecap="round"/></svg>
+                Sending&hellip;
+              </span>
+            </button>
+            <div class="form__status" id="formStatus" role="alert" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="#home" class="footer__logo">
+            <img src="logo.png" alt="OmniSeq" class="logo-img" width="32" height="32">
+            <span>OmniSeq</span>
+          </a>
+          <p>Enterprise-grade cybersecurity partner delivering global-standard security practices with deep local expertise in Nepal.</p>
+        </div>
+        <div class="footer__column">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer__column">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#services">VAPT Testing</a></li>
+            <li><a href="#services">Compliance &amp; Auditing</a></li>
+            <li><a href="#services">Security Operations</a></li>
+            <li><a href="#services">Infrastructure Design</a></li>
+          </ul>
+        </div>
+        <div class="footer__column">
+          <h4>Connect</h4>
+          <div class="footer__socials">
+            <a href="https://linkedin.com/company/omniseq" class="footer__social" title="LinkedIn" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="https://twitter.com/" class="footer__social" title="Twitter" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="https://github.com/Omni-seQ" class="footer__social" title="GitHub" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+          </div>
+          <p class="footer__email">
+            <a href="mailto:contact@omniseq.com.np">contact@omniseq.com.np</a>
+          </p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; <span id="currentYear">2025</span> OmniSeq Pvt. Ltd. All rights reserved.</p>
+        <div class="footer__links">
+          <a href="privacy.html">Privacy Policy</a>
+          <span class="footer__sep">&middot;</span>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <!-- Cloudflare Turnstile (loaded async, rendered explicitly in JS) -->
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit" async defer></script>
+  <script src="script.js"></script>
 </body>
 </html>

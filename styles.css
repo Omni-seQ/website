@@ -875,6 +875,18 @@ a:hover {
   transition: transform var(--duration-normal) var(--ease-standard);
 }
 
+[data-color-scheme="dark"] .logo-icon {
+  filter: brightness(0) invert(1);
+  opacity: 0.95;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-color-scheme]) .logo-icon {
+    filter: brightness(0) invert(1);
+    opacity: 0.95;
+  }
+}
+
 .header__logo:hover .logo-icon {
   transform: scale(1.1) rotate(5deg);
 }
@@ -1335,7 +1347,7 @@ section {
 
 .services__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: var(--space-24);
   margin-top: var(--space-32);
 }
@@ -1348,32 +1360,9 @@ section {
   transition: all var(--duration-normal) var(--ease-standard);
   cursor: pointer;
   position: relative;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   box-shadow: var(--shadow-sm);
-  will-change: transform, box-shadow;
-}
-
-.service-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: var(--color-secondary);
-  opacity: 0;
-  transition: opacity var(--duration-normal) var(--ease-standard);
-}
-
-.service-card::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: var(--color-secondary);
-  opacity: 0.5;
-  pointer-events: none;
 }
 
 .service-card:hover {
@@ -1382,21 +1371,19 @@ section {
   transform: translateY(-4px);
 }
 
-.service-card:hover::before {
-  opacity: 1;
-}
-
 .service-icon {
   width: 48px;
   height: 48px;
   margin-bottom: var(--space-24);
   color: var(--color-primary);
   transition: all var(--duration-normal) var(--ease-standard);
+  position: relative;
+  z-index: 1;
 }
 
 .service-card:hover .service-icon {
   color: var(--color-primary-hover);
-  transform: scale(1.2) rotate(-15deg);
+  transform: scale(1.1);
 }
 
 .service-card h3 {
@@ -1405,23 +1392,31 @@ section {
   color: var(--color-text);
   font-weight: var(--font-weight-semibold);
   transition: color var(--duration-normal) var(--ease-standard);
+  position: relative;
+  z-index: 1;
 }
 
 .service-card p {
   color: var(--color-text-secondary);
   font-size: var(--font-size-sm);
   line-height: var(--line-height-normal);
+  position: relative;
+  z-index: 1;
 }
 
 .service-details {
-  margin-top: var(--space-24);
   max-height: 0;
   overflow: hidden;
-  transition: max-height var(--duration-normal) var(--ease-standard);
+  transition: max-height var(--duration-normal) var(--ease-standard),
+              margin-top var(--duration-normal) var(--ease-standard);
+  margin-top: 0;
+  position: relative;
+  z-index: 1;
 }
 
 .service-card:hover .service-details {
   max-height: 200px;
+  margin-top: var(--space-16);
 }
 
 .service-details ul {
